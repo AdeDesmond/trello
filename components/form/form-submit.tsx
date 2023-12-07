@@ -30,7 +30,7 @@ export const FormSubmit = ({
       size="sm"
       type="submit"
       disabled={pending || disabled}
-      variant={variant}
+      variant={"primary"}
       className={cn("w-full", className)}
     >
       {children}
