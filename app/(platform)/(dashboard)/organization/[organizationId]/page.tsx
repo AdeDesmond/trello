@@ -1,8 +1,3 @@
-import { create } from "@/actions/createBoard";
-import { Button } from "@/components/ui/button";
-import { db } from "@/lib/db";
-import { Board } from "./_lessons/board";
-import { Form } from "./_lessons/form";
 import { Info } from "./_components/info";
 import { Separator } from "@/components/ui/separator";
 import { BoardList } from "./_components/boardlist";
