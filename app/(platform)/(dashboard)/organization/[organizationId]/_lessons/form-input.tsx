@@ -1,3 +1,5 @@
+/*
+
 "use client";
 
 import { Input } from "@/components/ui/input";
@@ -32,3 +34,5 @@ export const FormInput = function ({ errors }: FormInputProps) {
     </div>
   );
 };
+
+*/

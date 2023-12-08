@@ -1,3 +1,5 @@
+/*
+
 import { del } from "@/actions/deleteBoard";
 import { Button } from "@/components/ui/button";
 
@@ -17,3 +19,5 @@ export const Board = ({ title, id }: BoardProps) => {
     </form>
   );
 };
+
+*/

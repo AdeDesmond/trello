@@ -1,3 +1,5 @@
+/*
+
 "use server";
 
 import { db } from "@/lib/db";
@@ -11,3 +13,5 @@ export async function del(id: string) {
   });
   revalidatePath("/organization/org_2YALDrTd7zWBmhO8Z7xWOBWMndm");
 }
+
+*/
