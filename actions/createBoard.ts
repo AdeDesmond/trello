@@ -28,11 +28,11 @@ export async function create(prevSate: State, formData: FormData) {
   }
   const { title } = validatedFields.data;
   try {
-    await db.board.create({
-      data: {
-        title,
-      },
-    });
+    //await db.board.create({
+    //data: {
+    //  title,
+    // },
+    // });
   } catch (error) {
     return {
       message: "database error",

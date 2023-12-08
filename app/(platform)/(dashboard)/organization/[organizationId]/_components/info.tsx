@@ -4,7 +4,12 @@ import { Skeleton } from "@/components/ui/skeleton";
 import { useOrganization } from "@clerk/nextjs";
 import { CreditCardIcon } from "lucide-react";
 import Image from "next/image";
-export const Info = () => {
+
+interface InfoProps {
+  isPremium: boolean;
+}
+
+export const Info = ({ isPremium }: InfoProps) => {
   const { organization, isLoaded } = useOrganization();
   if (!isLoaded) {
     return <Info.Skeleton />;
@@ -23,7 +28,7 @@ export const Info = () => {
         <p className="font-semibold text-xl">{organization?.name}</p>
         <div className="flex items-center text-xs text-muted-foreground">
           <CreditCardIcon className=" w-4 h-4 mr-1" />
-          Free
+          {isPremium ? "Premium" : "Free"}
         </div>
       </div>
     </div>
